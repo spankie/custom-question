@@ -2,7 +2,7 @@
 
 ## record label
 
-Build a rest api that will enable a user/client make request to retrieve all artists songs and 
+Build a rest api that will enable a record label make request to retrieve it's artists songs and number of plays on shazam
 
 
 # TEST 2
