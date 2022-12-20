@@ -1,4 +1,4 @@
-package main
+package api
 
 import (
 	"encoding/json"
@@ -46,6 +46,6 @@ func makeRequest(method, url string, body interface{}) error {
 	return nil
 }
 
-func get(url string, body interface{}) {
-	makeRequest(http.MethodGet, url, body)
+func get(url string, body interface{}) error {
+	return makeRequest(http.MethodGet, url, body)
 }

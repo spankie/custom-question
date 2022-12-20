@@ -1,4 +1,4 @@
-package main
+package api
 
 import (
 	"fmt"
@@ -7,7 +7,7 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-func pingHandler(c *gin.Context) {
+func PingHandler(c *gin.Context) {
 	c.JSON(http.StatusOK, gin.H{
 		"message": "pong",
 	})
@@ -26,7 +26,7 @@ type TrackSearchResult struct {
 	}
 }
 
-func searchHandler(c *gin.Context) {
+func SearchHandler(c *gin.Context) {
 	// get the query param for search
 	songName := c.Request.URL.Query().Get("name")
 	result := &TrackSearchResult{}
@@ -40,7 +40,7 @@ func searchHandler(c *gin.Context) {
 }
 
 // example: 609790719
-func playsHandler(c *gin.Context) {
+func PlaysHandler(c *gin.Context) {
 	// get the id from the route
 	songID := c.Param("id")
 	// return the result
