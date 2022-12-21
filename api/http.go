@@ -18,7 +18,8 @@ var (
 )
 
 func makeRequest(method, url string, body interface{}) error {
-	req, err := http.NewRequest(method, fmt.Sprintf("%s%s", BaseURL, url), nil)
+	completeURL := fmt.Sprintf("%s%s", BaseURL, url)
+	req, err := http.NewRequest(method, completeURL, nil)
 	if err != nil {
 		return err
 	}

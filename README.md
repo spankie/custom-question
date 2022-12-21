@@ -2,7 +2,7 @@
 
 ## record label
 
-Build a rest api that will enable a record label make request to retrieve it's artists songs and number of plays on shazam. Getting this data can be done using the RapidAPI Shazam API.
+Build a rest api that will enable a record label make request to retrieve it's artists songs and number of plays on shazam. Getting this data can be done using the RapidAPI's Shazam API. to use the shazam api on RapidAPI you will have to register and get an API key to use in your app.
 
 ### Expectations
 
@@ -21,4 +21,3 @@ Build a rest api that will enable a record label make request to retrieve it's a
 Write a function that takes in an array of strings and returns a slice of strings where each string has had all of its vowels removed. The function should preserve the order of the original slice, and it should not modify the original slice.
 
 example input:
-  
